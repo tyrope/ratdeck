@@ -1,0 +1,8 @@
+# Don't include third party modules.
+node_modules/
+
+# Don't include package files.
+package*.json
+
+# Don't include files that contain passwords, either
+loginInfo.json
