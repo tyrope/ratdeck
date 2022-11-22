@@ -11,7 +11,8 @@ function Reactor(){
 }
 
 Reactor.prototype.dispatchEvent = function(eventName, eventArgs){
-    this.events[eventName].callbacks.ForEach(function(callback){
+    if(!this.events.hasOwnProperty(eventName)){ return; }
+    this.events[eventName].callbacks.forEach(function(callback){
         callback(eventArgs);
     });
 };

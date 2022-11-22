@@ -1,11 +1,11 @@
 {
     "Actions": [
         {
-            "Icon": "img/actionIcon",
+            "Icon": "img/fullBlank",
             "Name": "Latest Case Number",
             "States": [
                 {
-                    "Image": "Icon",
+                    "Image": "img/latestCaseIcon",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -15,6 +15,7 @@
         }
     ],
     "Author": "Tyrope",
+    "Category": "Rat Deck",
     "CodePath": "code.html",
     "Description": "We have Fuel. You don't. Any questions?",
     "Icon": "img/pluginIcon",

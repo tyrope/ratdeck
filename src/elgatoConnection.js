@@ -28,11 +28,6 @@ function connectElgatoStreamDeckSocket(inPort, inPluginUUID, inRegisterEvent, in
         let evtType = evtData['event'];
         switch(evtType){
             case 'willAppear':
-                if(devMode){
-                    websocket.send(JSON.stringify({"event":"logMessage","payload":{"message":
-                        "Firing event: "+evtType+" with data: "+JSON.stringify(evtData)
-                    }}));
-                }
                 streamDeckEvents.dispatchEvent(evtType, evtData);
                 break;
             default:

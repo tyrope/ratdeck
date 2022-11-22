@@ -1,2 +1,2 @@
-const devMode = false;
+var devMode = false;
 

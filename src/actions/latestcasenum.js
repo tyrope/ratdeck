@@ -9,14 +9,14 @@ class LatestCaseNum {
         this.context = context;
     };
 
-    function OnDisplay(evtData) {
+    OnDisplay(evtData) {
         this.SetTitle(lastCall);
     };
 
-    function SetTitle(newTitle) {
+    SetTitle(newTitle) {
         websocket.send(JSON.stringify({
             "event": "setTitle",
-            "context": this.contxt,
+            "context": this.context,
             "payload": {
                 "title": newTitle
             }
@@ -25,12 +25,6 @@ class LatestCaseNum {
 };
 
 streamDeckEvents.addEventListener("willAppear", function(evtData){
-    if(devMode){
-        websocket.send(JSON.stringify({"event":"logMessage","payload":{"message":
-            "LatestcaseNum received event "+evtType+" with data: "+JSON.stringify(evtData)
-        }}));
-    }
-
     if(evtData['action'] != LatestCaseNum.type){
         return; // Not one of latestcasenum.
     }
