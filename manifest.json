@@ -1,0 +1,29 @@
+{
+    "Actions": [
+        {
+            "Icon": "img/actionIcon",
+            "Name": "Latest Case Number",
+            "States": [
+                {
+                    "Image": "Icon",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "UUID": "nl.tyrope.ratdeck.latestcasenum"
+        }
+    ],
+    "Author": "Tyrope",
+    "CodePath": "code.html",
+    "Description": "We have Fuel. You don't. Any questions?",
+    "Icon": "img/pluginIcon",
+    "Name": "Rat Deck",
+    "Version": "0.1",
+    "SDKVersion": 2,
+    "OS": [
+        { "Platform": "windows", "MinimumVersion": "10" }
+    ],
+    "Software": { "MinimumVersion": "5.0" }
+}
+

@@ -5,4 +5,7 @@ node_modules/
 package*.json
 
 # Don't include files that contain passwords, either
-loginInfo.json
+config.js
+
+# other misc files.
+logs.lnk
